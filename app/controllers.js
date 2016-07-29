@@ -21,6 +21,16 @@ app.controller('NavbarCtrl', ['$scope', function($scope) {
 
 }])
 
+app.controller('StoryCtrl', ['$scope', '$state', function($scope, $state) {
+
+	$state.go('Story')
+}])
+
+app.controller('ThanksCtrl', ['$scope', '$state', function($scope, $state) {
+
+	$state.go('Thanks')
+}])
+
 app.controller('GettingReadyCtrl', ['$scope', '$state', 'Lightbox', 
 	function($scope, $state, Lightbox) {
 

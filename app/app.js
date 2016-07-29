@@ -10,12 +10,18 @@ var app = angular.module('WeddingApp', ['WeddingCtrl', 'ui.router'])
     templateUrl: 'views/home.html',
     controller: 'HomeCtrl'
   })
-  // $stateProvider
-  // .state('Gallery', {
-  // 	url: '/gallery',
-  // 	templateUrl: 'views/gallery.html',
-  // 	controller: 'GalleryCtrl'
-  // })
+  $stateProvider
+  .state('Story', {
+  	url: '/story',
+  	templateUrl: 'views/story.html',
+  	controller: 'StoryCtrl'
+  })
+  $stateProvider
+  .state('Thanks', {
+  	url: '/thanks',
+  	templateUrl: 'views/thanks.html',
+  	controller: 'ThanksCtrl'
+  })
   $stateProvider
   .state('GettingReady', {
   	url: '/photos/getting-ready',
@@ -47,11 +53,12 @@ var app = angular.module('WeddingApp', ['WeddingCtrl', 'ui.router'])
   	controller: 'SunsetCtrl'
   })
   $stateProvider
-  .state('NavbarCtrl', {
+  .state('Navbar', {
   	url: '/',
   	templateUrl: 'navbar.html',
   	controller: 'NavbarCtrl'
   })
+
 
 
 
