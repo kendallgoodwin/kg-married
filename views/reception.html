@@ -1,0 +1,12 @@
+<div class="container">
+	<h1>Reception</h1>
+	<!-- <div ng-controller="GalleryCtrl"> -->
+		<ul class="gallery gallery6" ng-controller="ReceptionCtrl">
+  		<li ng-repeat="image in reception">
+    		<a ng-click="openLightboxModal($index)">
+      		<img ng-src="{{image.url}}" class="img-thumbnail">
+    		</a>
+  		</li>
+		</ul>
+	</div>
+</div>
