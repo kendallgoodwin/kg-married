@@ -9,7 +9,10 @@ app.controller('HomeCtrl', ['$scope', '$state', function($scope, $state) {
 
 app.controller('NavbarCtrl', ['$scope', function($scope) {
 	// Enables clickable collapse navbar in mobile view
+	// $scope.isCollapsed = true;
+
 	$scope.isCollapsed = true;
+  $scope.isCollapsedHorizontal = false;
 
 	// Enables dropdown menu in navbar
 	$scope.status = {
