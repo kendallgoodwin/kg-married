@@ -1,14 +1,12 @@
 <div class="container">
-	<h1>Sunset</h1>
-		<!-- <ul>
-			<li ng-repeat="image in sunset">
-			<img ng-src="{{image}}" class="img-thumbnail">
-		</ul> -->
-		<ul class="gallery gallery6" ng-controller="SunsetCtrl">
-  		<li ng-repeat="image in sunset">
-    		<a ng-click="openLightboxModal($index)">
-      		<img ng-src="{{image.url}}" class="img-thumbnail">
-    		</a>
-  		</li>
-		</ul>
+	<h1 class="title">Sunset</h1>
+		<div class="photo-div">
+			<ul class="gallery gallery6" ng-controller="SunsetCtrl">
+	  		<li ng-repeat="image in sunset">
+	    		<a ng-click="openLightboxModal($index)">
+	      		<img ng-src="{{image.url}}" class="img-thumbnail">
+	    		</a>
+	  		</li>
+			</ul>
+		</div>
 </div>
