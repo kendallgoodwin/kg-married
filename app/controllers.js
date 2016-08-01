@@ -102,7 +102,7 @@ $scope.gettingReady = [
   ]
 
   $scope.openLightboxModal = function (index) {
-  	if (window.innerWidth > 640) {
+  	if (window.innerWidth > 768) {
     Lightbox.openModal($scope.gettingReady, index);
   	} 
   }
@@ -184,7 +184,7 @@ app.controller('FirstLookCtrl', ['$scope', '$state', 'Lightbox',
   ]
 
   $scope.openLightboxModal = function (index) {
-  	if (window.innerWidth > 640) {
+  	if (window.innerWidth > 768) {
     Lightbox.openModal($scope.firstLook, index);
   	} 
   }
@@ -290,7 +290,7 @@ app.controller('CeremonyCtrl', ['$scope', '$state', 'Lightbox',
   ]
 
  $scope.openLightboxModal = function (index) {
-  	if (window.innerWidth > 640) {
+  	if (window.innerWidth > 768) {
     Lightbox.openModal($scope.ceremony, index);
   	} 
   }
@@ -399,7 +399,7 @@ $scope.reception = [
 	]
 
 	 $scope.openLightboxModal = function (index) {
-  	if (window.innerWidth > 640) {
+  	if (window.innerWidth > 768) {
     Lightbox.openModal($scope.reception, index);
   	} 
   }
@@ -428,7 +428,7 @@ app.controller('SunsetCtrl', ['$scope', '$state', 'Lightbox', function($scope, $
   ]
 
   $scope.openLightboxModal = function (index) {
-  	if (window.innerWidth > 640) {
+  	if (window.innerWidth > 768) {
     Lightbox.openModal($scope.sunset, index);
   	} 
   }

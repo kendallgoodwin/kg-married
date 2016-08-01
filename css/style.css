@@ -13,28 +13,28 @@ li {
 
 /*NAVBAR*/
 .navbar-default .navbar-nav>li>a {
-	color: #063b18;
+	color: #2a8566;
 }
 
 .dropdown-menu>li>a {
-	color: #063b18;
+	color: #2a8566;
 }
 
 .navbar-default {
-	background-color: #879e96;
-	border-color: #063b18;
+	background-color: #aecbb9;
+	border-color: #2a8566;
 }
 
 .navbar-default .navbar-brand {
-	color: #063b18
+	color: #2a8566
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #879e96;
+	background-color: #aecbb9;
 }
 
 .dropdown-menu {
-	background-color: #879e96;
+	background-color: #aecbb9;
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
@@ -42,13 +42,13 @@ li {
 }
 
 .navbar-nav>.open>a:hover {
-	color: #063b18;
+	color: #2a8566;
 	background-color: white;
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, 
 .navbar-default .navbar-nav>.open>a:hover {
-	color: #063b18;
+	color: #2a8566;
 	background-color: white;
 }
 
@@ -62,7 +62,7 @@ h1 {
 	text-align: left;
 	font-family: 'Parisienne', cursive;
 	font-size: 50px;
-	color: #063b18;
+	color: #2a8566;
 }
 
 p {
@@ -79,12 +79,20 @@ p {
 }
 
 .story {
-	background-color: #c5a5a3;
-	border: 2px solid #b07786;
+	/*background-color: #c5a5a3;*/
+	background-image: url("/images/Kendall+Greg(TheStory)298.jpg");
+	background-size: cover;
+	opacity: .5;
+	border: 10px solid #b07786;
 	color: white;
 	margin-top: 40px;
 	margin-bottom: 40px;
 	padding: 40px;
+}
+
+.thanks {
+	margin-top: 40px;
+	margin-bottom: 40px;
 }
 
 .img-responsive {
@@ -107,6 +115,11 @@ p {
 .img-thumbnail {
 	/*height: 200px;*/
 	/*width: 300px;*/
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, 
+.thumbnail a>img, .thumbnail>img {
+	display: inline;
 }
 
 
@@ -143,19 +156,36 @@ p {
 
 @media only screen and (min-width: 1000px) {
 	.img-thumbnail {
-		height: 200px !important;
+		height: 250px !important;
+	}
+	.story {
+		/*background-color: #c5a5a3;*/
+	background-image: url("/images/Kendall+Greg(TheStory)298.jpg");
+	background-size: cover;
+	opacity: .5;
+	border: 10px solid #b07786;
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 70px;
 	}
 }
 
-@media only screen and (min-width: 769px) and (max-width: 999px) {
+@media only screen and (min-width: 869px) and (max-width: 999px) {
 	.img-thumbnail {
-		height: 225px !important;
+		height: 240px !important;
+	}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 868px) {
+	.img-thumbnail {
+		height: 235px !important;
 	}
 }
 
 @media only screen and (min-width: 641px) and (max-width: 768px) {
 	.img-thumbnail {
-		height: 195px !important;
+		width: 575px !important;
 	}
 }
 
@@ -169,6 +199,16 @@ p {
 	.img-thumbnail {
 		width: 425px !important;
 	}
+	.story {
+	background-image: url("/images/Kendall+Greg(TheStory)289.jpg");
+	background-size: cover;
+	opacity: .5;
+	border: 10px solid #b07786;
+	color: white;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	padding: 40px;
+}
 }
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
