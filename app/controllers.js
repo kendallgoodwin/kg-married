@@ -34,50 +34,33 @@ app.controller('ThanksCtrl', ['$scope', '$state', function($scope, $state) {
 app.controller('GettingReadyCtrl', ['$scope', '$state', 'Lightbox', 
 	function($scope, $state, Lightbox) {
 
-// getting ready
 $scope.gettingReady = [
 	{'url': 'http://s26.postimg.org/4dmoluzgp/Kendall_Greg_The_Story_000.jpg'}, 
 	{'url': 'https://s26.postimg.org/5ty7402dl/Kendall_Greg_The_Story_001.jpg'},
   {'url': 'https://s26.postimg.org/g5ajwnu2x/Kendall_Greg_The_Story_002.jpg'}, 
-  // 'images/Kendall+Greg(TheStory)003.jpg',
-  // 'images/Kendall+Greg(TheStory)004.jpg', 
   {'url': 'https://s26.postimg.org/qgmwpbls9/Kendall_Greg_The_Story_005.jpg'},
-
   {'url': 'https://s26.postimg.org/45z1pcoi1/Kendall_Greg_The_Story_006.jpg'},
-  // 'images/Kendall+Greg(TheStory)008.jpg',
   {'url': 'https://s26.postimg.org/z1g8ghvyh/Kendall_Greg_The_Story_010.jpg'}, 
   {'url': 'https://s26.postimg.org/rpasaydqh/Kendall_Greg_Details_000.jpg'},
-
   {'url': 'https://s26.postimg.org/kwafeomx5/Kendall_Greg_The_Story_013.jpg'},
   {'url': 'https://s26.postimg.org/6ehtkfkzt/Kendall_Greg_The_Story_014.jpg'}, 
-  // 'images/Kendall+Greg(TheStory)015.jpg',
-
-  // 'images/Kendall+Greg(TheStory)016.jpg', 
-  // 'images/Kendall+Greg(TheStory)018.jpg',
   {'url': 'https://s26.postimg.org/rpfdop349/Kendall_Greg_The_Story_019.jpg'}, 
-
   {'url': 'https://s26.postimg.org/4chc66n0p/Kendall_Greg_The_Story_022.jpg'},
   {'url': 'https://s26.postimg.org/kordvx1c9/Kendall_Greg_The_Story_023.jpg'}, 
   {'url': 'https://s26.postimg.org/4p44ymfwp/Kendall_Greg_details_003.jpg'},
-  // 'images/Kendall+Greg(TheStory)024.jpg',
   {'url': 'https://s26.postimg.org/s60lb4qvd/Kendall_Greg_The_Story_026.jpg'}, 
-  // 'images/Kendall+Greg(TheStory)029.jpg',
   {'url': 'https://s26.postimg.org/dbbzwyhah/Kendall_Greg_The_Story_031.jpg'}, 
   {'url': 'https://s26.postimg.org/5wmo4kvex/Kendall_Greg_The_Story_032.jpg'},
   {'url': 'https://s26.postimg.org/szd73qww9/Kendall_Greg_The_Story_033.jpg'}, 
   {'url': 'https://s26.postimg.org/3um6qbxft/Kendall_Greg_The_Story_036.jpg'},
-  // 'images/Kendall+Greg(TheStory)039.jpg', 
   {'url': 'https://s26.postimg.org/fxridw8i1/Kendall_Greg_The_Story_040.jpg'},
   {'url': 'https://s26.postimg.org/yeqiigdu1/Kendall_Greg_The_Story_043.jpg'}, 
   {'url': 'https://s26.postimg.org/iuj4rx3pl/Kendall_Greg_The_Story_044.jpg'},
-  // 'images/Kendall+Greg(TheStory)047.jpg', 
-  // 'images/Kendall+Greg(TheStory)049.jpg',
   {'url': 'https://s26.postimg.org/ojzdc89vt/Kendall_Greg_The_Story_053.jpg'}, 
   {'url': 'https://s26.postimg.org/6ig8effux/Kendall_Greg_The_Story_054.jpg'},
   {'url': 'https://s26.postimg.org/ozan58vt5/Kendall_Greg_The_Story_056.jpg'}, 
   {'url': 'https://s26.postimg.org/8pkh2cl55/Kendall_Greg_The_Story_060.jpg'},
 	{'url': 'https://s26.postimg.org/qgw3gt0jt/Kendall_Greg_The_Story_061.jpg'}, 
-
   {'url': 'https://s26.postimg.org/vgtjor66h/Kendall_Greg_The_Story_066.jpg'}, 
   {'url': 'https://s26.postimg.org/orn08qkuh/Kendall_Greg_The_Story_067.jpg'}, 
   {'url': 'https://s26.postimg.org/fl4plgfm1/Kendall_Greg_The_Story_068.jpg'},
@@ -102,7 +85,7 @@ $scope.gettingReady = [
   ]
 
   $scope.openLightboxModal = function (index) {
-  	if (window.innerWidth > 768) {
+  	if (window.innerWidth > 767) {
     Lightbox.openModal($scope.gettingReady, index);
   	} 
   }
@@ -184,7 +167,7 @@ app.controller('FirstLookCtrl', ['$scope', '$state', 'Lightbox',
   ]
 
   $scope.openLightboxModal = function (index) {
-  	if (window.innerWidth > 768) {
+  	if (window.innerWidth > 767) {
     Lightbox.openModal($scope.firstLook, index);
   	} 
   }
@@ -290,7 +273,7 @@ app.controller('CeremonyCtrl', ['$scope', '$state', 'Lightbox',
   ]
 
  $scope.openLightboxModal = function (index) {
-  	if (window.innerWidth > 768) {
+  	if (window.innerWidth > 767) {
     Lightbox.openModal($scope.ceremony, index);
   	} 
   }
@@ -399,7 +382,7 @@ $scope.reception = [
 	]
 
 	 $scope.openLightboxModal = function (index) {
-  	if (window.innerWidth > 768) {
+  	if (window.innerWidth > 767) {
     Lightbox.openModal($scope.reception, index);
   	} 
   }
@@ -428,7 +411,7 @@ app.controller('SunsetCtrl', ['$scope', '$state', 'Lightbox', function($scope, $
   ]
 
   $scope.openLightboxModal = function (index) {
-  	if (window.innerWidth > 768) {
+  	if (window.innerWidth > 767) {
     Lightbox.openModal($scope.sunset, index);
   	} 
   }
