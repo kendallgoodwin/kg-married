@@ -1,4 +1,4 @@
-angular.module('WeddingCtrl', ['WeddingServices', 'ngAnimate', 'ui.bootstrap', 'bootstrapLightbox'])
+angular.module('WeddingCtrl', ['WeddingServices', 'ngAnimate', 'ngTouch', 'ui.bootstrap', 'bootstrapLightbox'])
 
 app.controller('HomeCtrl', ['$scope', '$state', function($scope, $state) {
 	$scope.name = "Kendall Maniulit"
